@@ -5,7 +5,7 @@
 //     const object = {};
 //     for(var i = 0;i<str.length;i++){
 //         const char = str[i];
-//         if(/[A-Za-z0-9]/.test(char)){
+//         if(/[A-Za-z0-9]/.test(char)){ //used here the RegExp = Regular Expression
 //             if(object[char] > 0){
 //                 object[char]++;
 //             }else{
