@@ -1,12 +1,15 @@
 function maxSubArraySum(arr, num){
-    let max = 0;
-    let temp = 0;
+    let maxSum = 0;
+    let tempSum = 0;
     for(let i = 0; i<num; i++){
-        temp += arr[i];
+        maxSum += arr[i];
     }
-    max = temp;
+    tempSum = maxSum;
     for(let j = num; j<arr.length; j++){
-
+        tempSum = tempSum - arr[j - num] + arr[j];
+        maxSum = Math.max(maxSum,tempSum);
+        console.log(j);
     }
+    return maxSum;
 }
-console.log(maxSubArraySum([1,2,3,4,5,6,7],2));
+maxSubArraySum([1,2,3,4,5,6,7],2);
