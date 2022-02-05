@@ -7,4 +7,5 @@ function recursion (num){
     num ++;
     recursion(num);
 }
-recursion(0)
+recursion(0);
+
