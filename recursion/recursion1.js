@@ -1,12 +1,10 @@
-//Recursion first one;
+//Recursion is to solve the looping problem in our code.
 function recursion (num){
-    if(num<=0){
-        console.log('all done');
+    if(num>=20){
         return;
     }
-    console.log(num)
-    num --;
-    recursion (num);
-
+    console.log(num*2);
+    num ++;
+    recursion(num);
 }
-recursion(3);
+recursion(0)
